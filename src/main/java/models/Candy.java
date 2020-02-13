@@ -16,6 +16,18 @@ public class Candy
 
     }
 
+    public Candy(Integer inputId, String inputName, String inputBrand,
+                 Integer inputSku, Double inputWeightInOunces,
+                 Integer inputQty, Double inputPrice) {
+        id = inputId;
+        name = inputName;
+        brand = inputBrand;
+        sku = inputSku;
+        weightInOunces = inputWeightInOunces;
+        qty = inputQty;
+        price = inputPrice;
+    }
+
     public Integer getId() {
         return id;
     }

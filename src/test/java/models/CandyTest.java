@@ -4,6 +4,7 @@ package models;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class CandyTest {
 
@@ -82,5 +83,36 @@ public class CandyTest {
         Double actual = testCandy.getPrice();
 
         assertEquals(expected, actual);
+    }
+
+    @Test
+    public void constructorTest() {
+        Integer expectedId = 6;
+        String expectedName = "Milky Way";
+        String expectedBrand = "Mars";
+        Integer expectedSku = 14253482;
+        Double expectedWeightInOunces = 6.4;
+        Integer expectedQty = 108;
+        Double expectedPrice = 1.69;
+
+        Candy testCandy = new Candy(6, "Milky Way", "Mars",
+                14253482, 6.4, 108, 1.69);
+        testCandy.getId();
+
+        Integer actualId = testCandy.getId();
+        String actualName = testCandy.getName();
+        String actualBrand = testCandy.getBrand();
+        Integer actualSku = testCandy.getSku();
+        Double actualWeightInOunces = testCandy.getWeightInOunces();
+        Integer actualQty = testCandy.getQty();
+        Double actualPrice = testCandy.getPrice();
+
+        assertEquals(expectedId, actualId);
+        assertEquals(expectedName, actualName);
+        assertEquals(expectedBrand, actualBrand);
+        assertEquals(expectedSku, actualSku);
+        assertEquals(expectedWeightInOunces, actualWeightInOunces);
+        assertEquals(expectedQty, actualQty);
+        assertEquals(expectedPrice, actualPrice);
     }
 }

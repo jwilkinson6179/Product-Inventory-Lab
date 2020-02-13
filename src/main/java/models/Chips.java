@@ -6,8 +6,25 @@ public class Chips {
     private String brand;
     private Integer sku;
     private Double weightInOunces;
-    private Integer Qty;
+    private Integer qty;
     private Double price;
+
+    public Chips()
+    {
+    }
+
+    public Chips(Integer inputId, String inputName, String inputBrand,
+                 Integer inputSku, Double inputWeightInOunces, Integer inputQty,
+                 Double inputPrice)
+    {
+        id = inputId;
+        name = inputName;
+        brand = inputBrand;
+        sku = inputSku;
+        weightInOunces = inputWeightInOunces;
+        qty = inputQty;
+        price = inputPrice;
+    }
 
 
     public Integer getId() {
@@ -51,11 +68,11 @@ public class Chips {
     }
 
     public Integer getQty() {
-        return Qty;
+        return qty;
     }
 
     public void setQty(Integer qty) {
-        Qty = qty;
+        this.qty = qty;
     }
 
     public Double getPrice() {

@@ -82,4 +82,36 @@ public class ChipsTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void constructorTest() {
+        Integer expectedId = 110;
+        String expectedName = "Kettle Cooked Chips";
+        String expectedBrand = "Lays";
+        Integer expectedSku = 14113482;
+        Double expectedWeightInOunces = 14.2;
+        Integer expectedQty = 0;
+        Double expectedPrice = 3.89;
+
+        Candy testCandy = new Candy(110, "Kettle Cooked Chips",
+                "Lays",
+                14113482, 14.2, 0, 3.89);
+        testCandy.getId();
+
+        Integer actualId = testCandy.getId();
+        String actualName = testCandy.getName();
+        String actualBrand = testCandy.getBrand();
+        Integer actualSku = testCandy.getSku();
+        Double actualWeightInOunces = testCandy.getWeightInOunces();
+        Integer actualQty = testCandy.getQty();
+        Double actualPrice = testCandy.getPrice();
+
+        assertEquals(expectedId, actualId);
+        assertEquals(expectedName, actualName);
+        assertEquals(expectedBrand, actualBrand);
+        assertEquals(expectedSku, actualSku);
+        assertEquals(expectedWeightInOunces, actualWeightInOunces);
+        assertEquals(expectedQty, actualQty);
+        assertEquals(expectedPrice, actualPrice);
+    }
 }
