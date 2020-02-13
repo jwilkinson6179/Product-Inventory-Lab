@@ -9,11 +9,11 @@ public class CandyTest {
 
     @Test
     public void testGetId() {
-        int expected = 117;
+        Integer expected = 117;
 
         Candy testCandy = new Candy();
         testCandy.setId(117);
-        int actual = testCandy.getId();
+        Integer actual = testCandy.getId();
 
         assertEquals(expected, actual);
     }
@@ -42,44 +42,44 @@ public class CandyTest {
 
     @Test
     public void testGetSku() {
-        int expected = 38253482;
+        Integer expected = 38253482;
 
         Candy testCandy = new Candy();
         testCandy.setSku(38253482);
-        int actual = testCandy.getSku();
+        Integer actual = testCandy.getSku();
 
         assertEquals(expected, actual);
     }
 
     @Test
     public void testGetWeightInOunces() {
-        double expected = 10.7;
+        Double expected = 10.7;
 
         Candy testCandy = new Candy();
         testCandy.setWeightInOunces(10.7);
-        double actual = testCandy.getWeightInOunces();
+        Double actual = testCandy.getWeightInOunces();
 
         assertEquals(expected, actual);
     }
 
     @Test
     public void testGetQty() {
-        int expected = 72;
+        Integer expected = 72;
 
         Candy testCandy = new Candy();
         testCandy.setQty(72);
-        int actual = testCandy.getQty();
+        Integer actual = testCandy.getQty();
 
         assertEquals(expected, actual);
     }
 
     @Test
     public void testGetPrice() {
-        double expected = 1.69;
+        Double expected = 1.69;
 
         Candy testCandy = new Candy();
         testCandy.setPrice(1.69);
-        double actual = testCandy.getPrice();
+        Double actual = testCandy.getPrice();
 
         assertEquals(expected, actual);
     }

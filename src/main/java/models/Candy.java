@@ -4,19 +4,19 @@ public class Candy
 {
 
     // Should some of these be final without setters?
-    private int id;
+    private Integer id;
     private String name;
     private String brand;
-    private int sku;
-    private double weightInOunces;
-    private int qty;
-    private double price;
+    private Integer sku;
+    private Double weightInOunces;
+    private Integer qty;
+    private Double price;
 
     public Candy() {
 
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -28,19 +28,19 @@ public class Candy
         return brand;
     }
 
-    public int getSku() {
+    public Integer getSku() {
         return sku;
     }
 
-    public double getWeightInOunces() {
+    public Double getWeightInOunces() {
         return weightInOunces;
     }
 
-    public int getQty() {
+    public Integer getQty() {
         return qty;
     }
 
-    public double getPrice() {
+    public Double getPrice() {
         return price;
     }
 
