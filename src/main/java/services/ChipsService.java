@@ -21,7 +21,7 @@ public class ChipsService {
     }
 
     //read
-    public Chips findSneaker(int id)
+    public Chips findCandy(int id)
     {
         // should take an int and return an object with that id, if exists
 
